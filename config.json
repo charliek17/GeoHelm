@@ -3,7 +3,7 @@
         "elasticsearch_url": "http://localhost:9200",
         "caFingerprint": null
     },
-    "apm_secretToken": "VALUE",
+    "apm_secretToken": null,
     "apm_serverUrl": "http://localhost:8200",
     "leaflet_map_url": "https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}@2x.png?key=FqfkevxPp1MHOgb0ECgS",
     "comment": "Comment",

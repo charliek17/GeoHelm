@@ -4,7 +4,7 @@
         "caFingerprint": null
     },
     "apm_secretToken": null,
-    "apm_serverUrl": "http://localhost:8200",
+    "apm_serverUrl": null,
     "leaflet_map_url": "https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}@2x.png?key=FqfkevxPp1MHOgb0ECgS",
     "comment": "Comment",
     "type": "Type",

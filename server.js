@@ -1,5 +1,5 @@
 const config = require('./config.json');
-if (config.apm_secretToken) {
+if (config.apm_secretToken && config.apm_serverUrl) {
   const apm = require('elastic-apm-node').start({
     serviceName: 'GeoHelm',
     secretToken: config.apm_secretToken,
@@ -17,9 +17,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 console.log(config);
 app.get('/api/f-names', (req, res) => {
-  var span = apm.startSpan('parse json')
   res.json(config);
-  if (span) span.end()
 });
 
 app.post('/api/location', async (req, res) => {

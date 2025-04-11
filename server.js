@@ -4,6 +4,7 @@ if (config.apm_secretToken && config.apm_serverUrl) {
     serviceName: 'GeoHelm',
     secretToken: config.apm_secretToken,
     serverUrl: config.apm_serverUrl,
+    verifyServerCert: config.apm_verifyServerCert
   });
 }
 const express = require('express');
@@ -25,7 +26,7 @@ app.post('/api/location', async (req, res) => {
     node: config.elasticsearch_config.elasticsearch_url,
     caFingerprint: config.elasticsearch_config.caFingerprint,
     tls: {
-      rejectUnauthorized: true
+      rejectUnauthorized: false
     },
     auth: {
       username: req.body.username,

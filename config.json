@@ -5,6 +5,7 @@
     },
     "apm_secretToken": null,
     "apm_serverUrl": null,
+    "apm_verifyServerCert": false,
     "leaflet_map_url": "https://api.maptiler.com/maps/outdoor-v2/{z}/{x}/{y}@2x.png?key=FqfkevxPp1MHOgb0ECgS",
     "comment": "Comment",
     "type": "Type",
